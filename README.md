@@ -26,15 +26,37 @@ This expert system solves the classic Farmer Problem: transporting a farmer, a g
 - **Asking for More Solutions:** After displaying a solution, users can choose to see additional solutions by responding to prompts.
 
 ## Execution Examples
-?- run.
-Enter the knowledge base file name: 'knowledgeBase.pl'.
-compiling C:/Users/veekt/Desktop/project/knowledgeBase.pl for byte code...
-C:/Users/veekt/Desktop/project/knowledgeBase.pl compiled, 20 lines read - 3351 bytes written, 4 ms
-Solution Path:
-Moving from state(e, e, e, e) to state(w, w, e, e) - rule(transport(state(e, e, e, e), state(w, w, e, e)))
-...
-Do you want to see another solution? (yes/no): yes.
-...
+To run the expert system, follow these steps:
+
+1. **Start the System:**
+    ```prolog
+    ?- run.
+    ```
+2. **Enter the Knowledge Base File Name:**
+    ```plaintext
+    Enter the knowledge base file name: 'knowledgeBase.pl'.
+    ```
+3. **Compilation Output:**
+    ```plaintext
+    compiling C:/Users/veekt/Desktop/project/knowledgeBase.pl for byte code...
+    C:/Users/veekt/Desktop/project/knowledgeBase.pl compiled, 20 lines read - 3351 bytes written, 4 ms
+    ```
+
+4. **Solution Path Display:**
+    ```plaintext
+    Solution Path:
+    Moving from state(e, e, e, e) to state(w, w, e, e) - rule(transport(state(e, e, e, e), state(w, w, e, e)))
+    ...
+    ```
+
+5. **Prompt for Additional Solutions:**
+    ```plaintext
+    Do you want to see another solution? (yes/no): yes.
+    ...
+    ```
+
+Replace `knowledgeBase.pl` with the actual file name of your knowledge base to execute the system and view solutions.
+
 ## Principles and Theories Applied
 - **State Space Representation:** Models the problem as a graph where nodes are states and edges are transitions.
 - **Depth-First Search (DFS):** Explores paths through a graph, suitable for finite state spaces.
